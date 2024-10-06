@@ -1,0 +1,22 @@
+{
+  "name": "data-types",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "cache": false,
+      "executor": "@nx/js:tsc",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/packages/shared/data-types",
+        "main": "packages/shared/data-types/src/index.ts",
+        "tsConfig": "packages/shared/data-types/tsconfig.lib.json",
+        "assets": [
+          "packages/shared/data-types/*.md"
+        ]
+      }
+    }
+  }
+}
